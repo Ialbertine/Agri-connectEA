@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='flex items-center justify-between text-lg text-black py-[2vh] fixed z-10 w-full bg-white px-[1.6rem] lg:px-[4rem]'>
+      <div className='shadow-design flex items-center justify-between text-lg text-black py-[2vh] fixed z-10 w-full bg-white px-[1.6rem] lg:px-[4rem]'>
         <div data-aos="fade-down">
           <img src='img/logo.png' className='lg:w-[14rem] md:w-[12rem] sm:w-[11rem]' alt='Logo' />
         </div>

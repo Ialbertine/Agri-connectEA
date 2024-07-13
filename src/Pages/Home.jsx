@@ -50,7 +50,7 @@ const Home = () => {
           <div className="lg:w-[69vh] md:w-[44vh] sm:w-[44vh] flex flex-col lg:p-0 md:p-0 sm:p-3 gap-3" data-aos="fade-right">
             <p className="text-lg">Get to know our priority:</p>
             <p className="text-4xl text-green-900">Harvest Showcasing</p>
-            <p className="text-lg text-justify">
+            <p className="text-lg text-justify sm:w-[60vh]">
               Cooperatives celebrating the food they grow, proudly show them off
               to everyone and throughout the day, they engage with the
               distributors and vendors for increasing MARKET ACCESS bridge the
