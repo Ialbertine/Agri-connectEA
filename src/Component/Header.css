@@ -1,0 +1,17 @@
+.underline-animation {
+  position: relative;
+}
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: yellowgreen;
+  transition: width 0.6s ease-in-out;
+}
+.underline-animation:hover::after,
+.underline-animation.active::after {
+  width: 100%;
+}
