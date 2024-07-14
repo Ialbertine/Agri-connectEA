@@ -9,7 +9,9 @@ const Layout = () => {
     <>
       <div className=''>
         <Header/>
+        <div className=''>
         <Outlet/>
+        </div>
         <PreFooter/>
         <Footer/>
       </div>
