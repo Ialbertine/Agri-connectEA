@@ -54,8 +54,6 @@ const SignIn = () => {
         redirectPath = "/dashboard/farmer";
       } else if (role === "buyer") {
         redirectPath = "/dashboard/buyer";
-      } else if (role === "goverment") {
-        redirectPath = "/dashboard/goverment";
       } else {
         redirectPath = "/";
       }

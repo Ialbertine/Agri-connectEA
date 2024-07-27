@@ -28,8 +28,8 @@ const Header = () => {
         <div className='hidden md:flex lg:gap-10 md:gap-4 sm:gap-0' data-aos="fade-down">
           <Link to='/' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation active'> Home</Link>
           <Link to='/about' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> About</Link>
-          <Link to='/allfarmers' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> Services</Link>
-          <Link to='/services' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> Members</Link>
+          <Link to='/services' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> Services</Link>
+          <Link to='/members' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> Members</Link>
           <Link to='/news' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> News</Link>
           <Link to='/contact' className='cursor-pointer transition duration-300 ease-in-out font-medium underline-animation'> Contact</Link>
           
@@ -47,8 +47,8 @@ const Header = () => {
         <div className='text-xl flex flex-col items-center gap-4 py-4'>
           <Link to='/' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Home</Link>
           <Link to='/about' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>About</Link>
-          <Link to='/allfarmers' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Services</Link>
-          <Link to='/services' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Members</Link>
+          <Link to='/services' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Services</Link>
+          <Link to='/members' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Members</Link>
           <Link to='/contact' className='py-2 cursor-pointer transition duration-300 ease-in-out underline-animation' onClick={closeMenu}>Contact</Link>
           <Link to='/login' className='py-2 bg-green-900 px-5 rounded-md text-white hover:text-black hover:bg-yellow-200 transition duration-300 ease-in-out' onClick={closeMenu}>Sign In</Link>
         </div>

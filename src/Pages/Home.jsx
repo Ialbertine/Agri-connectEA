@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { PiArrowBendDownLeftThin } from "react-icons/pi";
+import { FaTwitter } from "react-icons/fa6";
+import { MdOutlineFacebook } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa6";
+import { FaPinterestP } from "react-icons/fa6";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -96,6 +101,42 @@ const Home = () => {
           </div>
         </div>
        {/* testimonials */}
+
+       {/* contact */}
+       <div>
+          <div className='flex lg:flex-row md:flex-col sm:flex-col justify-evenly py-28  bg-white'>
+            <div className='lg:w-[44vh] md:w-[80vh] mb-10 sm:w-[44vh] flex flex-col lg:p-0 md:p-0 sm:p-3 gap-3  lg:ml-0 md:ml-20 sm:ml-7'>
+              <p className=''>Contact now</p>
+              <p className='text-5xl text-green-900 lg:w-[50vh]' data-aos="fade-right">Get in touch with us</p>
+              <p className=''>our contact information reflects our commitment to providing excellent
+                customer service and support to all users of our AgriSoko connect platform. Feel free to
+                reach out to us with any questions or needs you may have.
+              </p>
+              <div className='flex gap-3'>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaTwitter /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><MdOutlineFacebook /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaPinterestP /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaInstagram /></div>
+              </div>
+            </div>
+            <div className='flex flex-col gap-5 lg:ml-0 md:ml-20 sm:ml-7' data-aos="fade-up">
+              <div className='flex lg:flex-row md:flex-col sm:flex-col gap-5'>
+                <input type='text' placeholder='Names' className='bg-[#ebebea] rounded-xl p-5 lg:w-[40vh] md:w-[80vh] sm:w-[40vh]'></input>
+                <input type='email' placeholder='Email' className='bg-[#ebebea] rounded-xl p-5 lg:w-[40vh] md:w-[80vh] sm:w-[40vh]'></input>
+              </div>
+              <div className='flex lg:flex-row md:flex-col sm:flex-col gap-5 '>
+                <input type='phone' placeholder='Phone number' className='bg-[#ebebea] rounded-xl p-5 lg:w-[40vh] md:w-[80vh] sm:w-[40vh]'></input>
+                <input type='text' placeholder='Subject' className='bg-[#ebebea] rounded-xl p-5 lg:w-[40vh] md:w-[80vh] sm:w-[40vh]'></input>
+              </div>
+              <div>
+                <textarea placeholder='Write message' className='bg-[#ebebea] rounded-xl p-2 lg:w-[83vh] md:w-[80vh] sm:w-[40vh] h-[30vh]'></textarea>
+              </div>
+              <Link to='/contact' className=' bg-yellow-200 px-5 py-3 lg:w-[30vh] md:w-[27vh] sm:w-[27vh] text-xl rounded-xl text-black hover:text-white hover:bg-green-900'> Send message</Link>
+
+            </div>
+          </div>
+
+        </div>
     </div>
   );
 };
