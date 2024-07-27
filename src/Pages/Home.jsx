@@ -102,7 +102,7 @@ const Home = () => {
         </div>
        {/* testimonials */}
 
-       {/* contact */}
+       {/* Get in touch with us */}
        <div>
           <div className='flex lg:flex-row md:flex-col sm:flex-col justify-evenly py-28  bg-white'>
             <div className='lg:w-[44vh] md:w-[80vh] mb-10 sm:w-[44vh] flex flex-col lg:p-0 md:p-0 sm:p-3 gap-3  lg:ml-0 md:ml-20 sm:ml-7'>
