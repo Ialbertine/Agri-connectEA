@@ -6,6 +6,7 @@
 in East Africa by improving market access, linking them with buyers, and 
 facilitating information exchange on modern and sustainable farming practices.
 
+<<<<<<< HEAD
 # Features
  - **User Registration:** Users can register as buyers or cooperatives (which can also be farmers)
  - **Product Showcase:** Farmers or cooperatives can showcase their agricultural products.
@@ -62,3 +63,4 @@ The platform relies on external APIs for Backend Functionalities and ensure that
   - Product Management: APIs for Adding, updating and deleting products
   - Order Management: APIs for placing and tracking Orders
   - Email Notifications: APIs for sending email notifications to the third parties
+
