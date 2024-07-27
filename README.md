@@ -19,9 +19,10 @@ News and Updates: Agricultural news, updates, and publications.
 Technologies Used
 
 Frontend: React, Tailwind CSS
+
 API Integrations: Backend functionalities are provided through integrated APIs.
 
-Getting Started
 Prerequisites
 Node.js
+
 Git
