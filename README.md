@@ -23,6 +23,6 @@ Frontend: React, Tailwind CSS
 API Integrations: Backend functionalities are provided through integrated APIs.
 
 Prerequisites
-Node.js
 
+Node.js
 Git
