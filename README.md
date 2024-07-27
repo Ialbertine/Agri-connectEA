@@ -6,6 +6,8 @@
 in East Africa by improving market access, linking them with buyers, and 
 facilitating information exchange on modern and sustainable farming practices.
 
+Here is The Link to Project: https://albertine-agri-connectea.netlify.app/ 
+
 # Features
  - **User Registration:** Users can register as buyers or cooperatives (which can also be farmers)
  - **Product Showcase:** Farmers or cooperatives can showcase their agricultural products.
