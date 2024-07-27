@@ -12,7 +12,7 @@ const BLandingPage = () => {
       _id: 1,
       NameOfProduct: "Tea",
       description: "High quality Rwandan tea",
-      pricePerTon: 2500,
+      pricePerTon: 250,
       quantity: 100,
       typeOfProduct: "Beverage",
       country: "Rwanda",
@@ -22,7 +22,7 @@ const BLandingPage = () => {
       _id: 2,
       NameOfProduct: "Cotton",
       description: "Soft and pure cotton",
-      pricePerTon: 1500,
+      pricePerTon: 150,
       quantity: 200,
       typeOfProduct: "Textile",
       country: "Tanzania",
@@ -32,7 +32,7 @@ const BLandingPage = () => {
       _id: 3,
       NameOfProduct: "Coffee",
       description: "Premium Arabica coffee beans",
-      pricePerTon: 3000,
+      pricePerTon: 300,
       quantity: 150,
       typeOfProduct: "Beverage",
       country: "Kenya",
@@ -42,7 +42,7 @@ const BLandingPage = () => {
       _id: 4,
       NameOfProduct: "Sugar Cane",
       description: "Fresh and organic sugar cane",
-      pricePerTon: 1800,
+      pricePerTon: 100,
       quantity: 120,
       typeOfProduct: "Crop",
       country: "Uganda",
@@ -52,7 +52,7 @@ const BLandingPage = () => {
       _id: 5,
       NameOfProduct: "Tobacco",
       description: "High quality tobacco leaves",
-      pricePerTon: 2200,
+      pricePerTon: 210,
       quantity: 80,
       typeOfProduct: "Crop",
       country: "Burundi",
@@ -62,7 +62,7 @@ const BLandingPage = () => {
       _id: 6,
       NameOfProduct: "Coconut",
       description: "Fresh and organic coconuts",
-      pricePerTon: 2000,
+      pricePerTon: 120,
       quantity: 50,
       typeOfProduct: "Fruit",
       country: "South Sudan",
@@ -72,7 +72,7 @@ const BLandingPage = () => {
       _id: 7,
       NameOfProduct: "Cassava",
       description: "High quality maize",
-      pricePerTon: 1100,
+      pricePerTon: 110,
       quantity: 250,
       typeOfProduct: "grain",
       country: "Kenya",
@@ -82,7 +82,7 @@ const BLandingPage = () => {
       _id: 8,
       NameOfProduct: "Cassava",
       description: "High quality cassava",
-      pricePerTon: 1100,
+      pricePerTon: 110,
       quantity: 250,
       typeOfProduct: "Root Crop",
       country: "Burundi",
@@ -92,7 +92,7 @@ const BLandingPage = () => {
       _id: 9,
       NameOfProduct: "Rice",
       description: "High quality Tanzanian rice",
-      pricePerTon: 1100,
+      pricePerTon: 110,
       quantity: 250,
       typeOfProduct: "grain",
       country: "Tanzania",
@@ -180,7 +180,7 @@ const BLandingPage = () => {
                   </div>
                   <div className="flex gap-2 text-xl font-medium">
                     <span>Price PerTon: {stockItem.pricePerTon}</span>
-                    <span>RWF</span>
+                    <span>$</span>
                   </div>
                   <div className="flex gap-2 text-xl font-medium">
                     <span>Quantity: {stockItem.quantity}</span>
