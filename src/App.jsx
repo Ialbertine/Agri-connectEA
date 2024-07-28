@@ -23,9 +23,9 @@ import ProtectedRoute from "./ProtectedRoute";
 
 import LandingPage from "./Dashboard/Farmer/LandingPage";
 import FarmerLayout from "./Dashboard/Farmer/FarmerLayout";
-// import FarmerProfile from "./Dashboard/Farmer/FarmerProfile";
-// import SupportFarmer from "./Dashboard/Farmer/SupportFarmer";
-
+import FarmerProfile from "./Dashboard/Farmer/Profile";
+import UploadProduct from "./Dashboard/Farmer/UploadProduct";
+import ReceivedOrders from "./Dashboard/Farmer/ReceivedOrders";
 
 const App = () => {
   return (
@@ -52,10 +52,7 @@ const App = () => {
           <Route path="" element={<BuyerLayout />}>
             <Route path="" element={<BLandingPage />} />
             <Route path="allorders" element={<AllOrders />} />
-            <Route
-                path="create/:productId/:NameOfProduct"
-                element={<Create />}
-              />
+            <Route path="create/:productId/:NameOfProduct" element={<Create />} />
             <Route path="create" element={<Create />} />
             <Route path="profile" element={<BuyerProfile />} />
             <Route path="news" element={<News />} />
@@ -64,17 +61,16 @@ const App = () => {
         </Route>
 
         <Route
-            path="farmer"
-            element={<ProtectedRoute allowedRoles={["farmer"]} />}
-          >
-            <Route element={<FarmerLayout />}>
-              <Route path="" element={<LandingPage />} />
-              {/* <Route path="orders" element={<ReceivedOrders />} />
-              <Route path="uploadproduct" element={<UploadProduct />} />
-              <Route path="profile" element={<Profile />} />
-              <Route path="stock" element={<Stock />} /> */}
-            </Route>
+          path="/dashboard/farmer"
+          element={<ProtectedRoute allowedRoles={["farmer"]} />}
+        >
+          <Route element={<FarmerLayout />}>
+            <Route path="" element={<LandingPage />} />
+            <Route path="orders" element={<ReceivedOrders />} />
+            <Route path="uploadproduct" element={<UploadProduct />} />
+            <Route path="profile" element={<FarmerProfile />} />
           </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

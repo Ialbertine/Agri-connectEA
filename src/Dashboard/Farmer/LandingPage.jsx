@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <>
-      <div className="">
+      <div className="pl-[10px]">
         <div className="relative">
           <img
-            src="../AboutUs.png"
+            src="/img/AboutUs.png"
             className="h-[30vh] w-[99%] object-cover"
           ></img>
-          <div className="absolute lg:top-16 md:top-24 sm:top-24 lg:left-[72vh] md:left-[42vh] sm:left-[8vh] text-white">
+          <div className="absolute lg:top-16 md:top-24 sm:top-24 lg:left-[60vh] md:left-[42vh] sm:left-[8vh] text-[#ece9e9]">
             <p className="text-5xl">
               <b>Farmer Dashboard</b>
             </p>
