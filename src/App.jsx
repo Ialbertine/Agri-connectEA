@@ -13,6 +13,8 @@ import Services from "./Pages/Services";
 import Members from "./Pages/Members";
 import News from "./Pages/News";
 
+import Navbar from "./Dashboard/NavBar";
+
 import BuyerLayout from "./Dashboard/Buyer/BuyerLayout";
 import BLandingPage from "./Dashboard/Buyer/BlandingPage";
 import AllOrders from "./Dashboard/Buyer/AllOrders";
@@ -27,6 +29,12 @@ import FarmerProfile from "./Dashboard/Farmer/Profile";
 import UploadProduct from "./Dashboard/Farmer/UploadProduct";
 import ReceivedOrders from "./Dashboard/Farmer/ReceivedOrders";
 import Stock from "./Dashboard/Farmer/Stock";
+
+import FirstPage from "./Dashboard/Admin/FirstPage";
+import Setting from "./Dashboard/Admin/Setting";
+import OneOrderDetails from "./Dashboard/Admin/OneOrderDetails";
+import Operation from "./Dashboard/Admin/Operation";
+import Farmers from "./Dashboard/Admin/Farmers";
 
 const App = () => {
   return (
@@ -46,6 +54,26 @@ const App = () => {
         <Route path="/reset" element={<Reset />} />
         <Route path="/otp" element={<Otp />} />
 
+        {/* Dashboard Routes */}
+        <Route path="dashboard">
+          <Route
+            path="admin"
+            element={<ProtectedRoute allowedRoles={["admin"]} />}
+          >
+            <Route element={<Navbar />}>
+              <Route path="" element={<FirstPage />} />
+              <Route path="farmers" element={<Farmers />} />
+              <Route path="operations" element={<Operation />} />
+              <Route
+                path="operations/orderDetails"
+                element={<OneOrderDetails />}
+              />
+              <Route path="setting" element={<Setting />} />
+            </Route>
+          </Route>
+        </Route>
+
+        {/* Buyer Routes */}
         <Route
           path="/dashboard/buyer"
           element={<ProtectedRoute allowedRoles={["buyer"]} />}
@@ -61,6 +89,7 @@ const App = () => {
           </Route>
         </Route>
 
+        {/* Farmer Routes */}
         <Route
           path="/dashboard/farmer"
           element={<ProtectedRoute allowedRoles={["farmer"]} />}
