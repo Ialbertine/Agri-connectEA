@@ -26,6 +26,7 @@ import FarmerLayout from "./Dashboard/Farmer/FarmerLayout";
 import FarmerProfile from "./Dashboard/Farmer/Profile";
 import UploadProduct from "./Dashboard/Farmer/UploadProduct";
 import ReceivedOrders from "./Dashboard/Farmer/ReceivedOrders";
+import Stock from "./Dashboard/Farmer/Stock";
 
 const App = () => {
   return (
@@ -69,6 +70,7 @@ const App = () => {
             <Route path="orders" element={<ReceivedOrders />} />
             <Route path="uploadproduct" element={<UploadProduct />} />
             <Route path="profile" element={<FarmerProfile />} />
+            <Route path="stock" element={<Stock />} />
           </Route>
         </Route>
       </Routes>
