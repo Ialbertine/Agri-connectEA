@@ -21,6 +21,22 @@ const ReceivedOrders = () => {
       shippingAddress: "123 Main St, Nairobi, Kenya",
       status: "Pending",
     },
+    {
+      _id: 7,
+      NameOfProduct: "Coffee Beans",
+      description: "High quality of coffee beans",
+      pricePerTon: 300,
+      quantity: 250,
+      typeOfProduct: "Beverage",
+      country: "Rwanda",
+      image: "/img/coffe.jpeg",
+      customer: {
+        fullName: "Albertine",
+        phoneNumber: "123-456-7890",
+      },
+      shippingAddress: "123 Main St, Kigali, Rwanda",
+      status: "Pending",
+    },
   ];
 
   const handleSearch = (event) => {
@@ -82,10 +98,14 @@ const ReceivedOrders = () => {
                     <tr>
                       <td className="py-2">{order._id}</td>
                       <td className="px-4 py-2">{order.customer.fullName}</td>
-                      <td className="px-4 py-2">{order.customer.phoneNumber}</td>
+                      <td className="px-4 py-2">
+                        {order.customer.phoneNumber}
+                      </td>
                       <td className="px-4 py-2">{order.NameOfProduct}</td>
                       <td className="px-4 py-2">{order.quantity}</td>
-                      <td className="px-4 py-2">{order.pricePerTon * order.quantity}</td>
+                      <td className="px-4 py-2">
+                        {order.pricePerTon * order.quantity}
+                      </td>
                       <td className="px-4 py-2">{order.shippingAddress}</td>
                       <td className="px-4 py-2">{order.status}</td>
                     </tr>

@@ -83,7 +83,7 @@ const Contact = () => {
             <p>
               Our contact information reflects our commitment to providing
               excellent customer service and support to all users of our
-              AgriSoko connect platform. Feel free to reach out to us with any
+              Agri-connectEA platform. Feel free to reach out to us with any
               questions or needs you may have.
             </p>
             <div className="flex gap-3">

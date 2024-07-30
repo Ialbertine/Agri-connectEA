@@ -109,14 +109,14 @@ const Home = () => {
               <p className=''>Contact now</p>
               <p className='text-5xl text-green-900 lg:w-[50vh]' data-aos="fade-right">Get in touch with us</p>
               <p className=''>our contact information reflects our commitment to providing excellent
-                customer service and support to all users of our AgriSoko connect platform. Feel free to
+                customer service and support to all users of our Agri-connectEA platform. Feel free to
                 reach out to us with any questions or needs you may have.
               </p>
-              <div className='flex gap-3'>
-                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaTwitter /></div>
-                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><MdOutlineFacebook /></div>
-                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaPinterestP /></div>
-                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' data-aos="fade-down"><FaInstagram /></div>
+              <div className='flex gap-3' data-aos="fade-up">
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' ><FaTwitter /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' ><MdOutlineFacebook /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' ><FaPinterestP /></div>
+                <div className='rounded-full bg-[#cfcfcb] flex items-center justify-center w-11 h-11 opacity-60 text-2xl' ><FaInstagram /></div>
               </div>
             </div>
             <div className='flex flex-col gap-5 lg:ml-0 md:ml-20 sm:ml-7' data-aos="fade-up">
