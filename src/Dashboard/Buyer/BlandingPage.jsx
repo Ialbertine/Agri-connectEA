@@ -52,7 +52,7 @@ const BLandingPage = () => {
         <div>
           <div className="relative">
             <img
-              src="../AboutUs.png"
+              src="/img/AboutUs.png"
               alt="Agri-Connect Banner"
               className="h-[20vh] w-[100%] object-cover"
             />
