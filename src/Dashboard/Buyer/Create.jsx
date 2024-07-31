@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import axios from "axios";
 
 const Create = () => {
-  const { stockItemId, NameOfProduct } = useParams(); // Extracting NameOfProduct from URL params
+  const { stockItemId, NameOfProduct } = useParams(); // Extracting nameofproduct from URL params
+  // const params = useParams();
+  // console.log(params);
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
   const [unit, setUnit] = useState("");
@@ -10,8 +13,8 @@ const Create = () => {
   const [shippingAddress, setShippingAddress] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-
-  const handleSubmit = (event) => {
+  console.log(NameOfProduct);
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     // Validation for the order
@@ -40,11 +43,37 @@ const Create = () => {
 
     // If validation is successful, create the order
     if (isValid) {
-      // Mock successful order creation
-      setSuccessMessage("Order created successfully!");
-      setTimeout(() => {
-        navigate("/dashboard/buyer/allorders");
-      }, 2000);
+      try {
+        const token = localStorage.getItem("token");
+        const orderData = {
+          selectedStockItems: [
+            {
+              NameOfProduct: NameOfProduct, // Using nameofproduct extracted from URL params
+              quantity: quantity,
+            },
+          ],
+          phoneNumber: phoneNumber,
+          shippingAddress: shippingAddress,
+        };
+
+        const response = await axios.post(
+          "https://agrisokoconnect-backend-ipza.onrender.com/AgriSoko/order/create",
+          orderData,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+
+        setSuccessMessage("Order created successfully!");
+        setTimeout(() => {
+          navigate("/dashboard/buyer/allorders");
+        }, 2000);
+      } catch (error) {
+        console.error("Error creating order:", error);
+        setErrorMessage("Failed to create order. Please try again.");
+      }
     }
   };
 
