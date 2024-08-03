@@ -28,16 +28,6 @@ const Members = () => {
       flag: "/img/burundi.png",
       description: "Burundi is primarily an agricultural country, growing coffee, tea, and various staple crops like cassava and maize."
     },
-    {
-      name: "South Sudan",
-      flag: "/img/south-sudan.jpg",
-      description: "South Sudan has significant agricultural potential, with a focus on sorghum, maize, and rice."
-    },
-    {
-      name: "DR Congo",
-      flag: "/img/congo.webp",
-      description: "The Democratic Republic of the Congo is rich in agricultural resources, producing maize, rice, and cassava."
-    }
   ];
 
   return (
