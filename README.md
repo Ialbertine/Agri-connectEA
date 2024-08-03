@@ -18,8 +18,9 @@ Here is The Link to Project: https://albertine-agri-connectea.netlify.app/
 
 # technologies Used
 
-- **Front-end:** React, Tailwind CSS
+- **Front-end:** React, Tailwind CSS and MUI for designing user interface
 - **API Integrations:** Backend functionalities are provided through Integrated APIs
+- **Testing:** Both black box and white box testing methods were applied to ensure the app functions correctly.
 
 ## Getting Started with
 
